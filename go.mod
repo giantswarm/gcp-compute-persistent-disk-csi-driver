@@ -3,7 +3,7 @@ module sigs.k8s.io/gcp-compute-persistent-disk-csi-driver
 go 1.17
 
 require (
-	cloud.google.com/go v0.65.0
+	cloud.google.com/go v0.102.0 // indirect
 	github.com/GoogleCloudPlatform/k8s-cloud-provider v0.0.0-20200415212048-7901bc822317
 	github.com/container-storage-interface/spec v1.5.0
 	github.com/golang/protobuf v1.5.2
@@ -12,11 +12,11 @@ require (
 	github.com/kubernetes-csi/csi-test/v4 v4.2.0
 	github.com/onsi/ginkgo v1.14.2
 	github.com/onsi/gomega v1.10.4
-	golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43
-	golang.org/x/sys v0.0.0-20210616094352-59db8d763f22
-	google.golang.org/api v0.34.0
-	google.golang.org/genproto v0.0.0-20210602131652-f16073e35f0c
-	google.golang.org/grpc v1.38.0
+	golang.org/x/oauth2 v0.0.0-20220608161450-d0670ef3b1eb
+	golang.org/x/sys v0.0.0-20220610221304-9f5ed59c137d
+	google.golang.org/api v0.84.0
+	google.golang.org/genproto v0.0.0-20220616135557-88e70c0c3a90
+	google.golang.org/grpc v1.47.0
 	gopkg.in/gcfg.v1 v1.2.3
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	k8s.io/apimachinery v0.22.0
@@ -30,6 +30,12 @@ require (
 )
 
 require (
+	cloud.google.com/go/compute v1.7.0
+	cloud.google.com/go/kms v1.4.0
+)
+
+require (
+	cloud.google.com/go/iam v0.3.0 // indirect
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/blang/semver v3.5.1+incompatible // indirect
@@ -39,9 +45,10 @@ require (
 	github.com/go-logr/logr v0.4.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
-	github.com/google/go-cmp v0.5.5 // indirect
+	github.com/google/go-cmp v0.5.8 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
-	github.com/googleapis/gax-go/v2 v2.0.5 // indirect
+	github.com/googleapis/enterprise-certificate-proxy v0.0.0-20220520183353-fd19c99a87aa // indirect
+	github.com/googleapis/gax-go/v2 v2.4.0 // indirect
 	github.com/googleapis/gnostic v0.5.5 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.0.0 // indirect
@@ -58,14 +65,14 @@ require (
 	github.com/prometheus/procfs v0.6.0 // indirect
 	github.com/sirupsen/logrus v1.8.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	go.opencensus.io v0.22.4 // indirect
-	golang.org/x/net v0.0.0-20210520170846-37e1c6afe023 // indirect
-	golang.org/x/term v0.0.0-20210220032956-6a3ed077a48d // indirect
-	golang.org/x/text v0.3.6 // indirect
+	go.opencensus.io v0.23.0 // indirect
+	golang.org/x/net v0.0.0-20220624214902-1bab6f366d9e // indirect
+	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211 // indirect
+	golang.org/x/text v0.3.7 // indirect
 	golang.org/x/time v0.0.0-20210723032227-1f47c861a9ac // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
-	google.golang.org/appengine v1.6.6 // indirect
-	google.golang.org/protobuf v1.26.0 // indirect
+	golang.org/x/xerrors v0.0.0-20220609144429-65e65417b02f // indirect
+	google.golang.org/appengine v1.6.7 // indirect
+	google.golang.org/protobuf v1.28.0 // indirect
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -106,3 +113,5 @@ replace (
 	k8s.io/sample-cli-plugin => k8s.io/sample-cli-plugin v0.22.0
 	k8s.io/sample-controller => k8s.io/sample-controller v0.22.0
 )
+
+replace golang.org/x/oauth2 v0.0.0-20200902213428-5d25da1a8d43 => golang.org/x/oauth2 v0.0.0-20220722155238-128564f6959c
